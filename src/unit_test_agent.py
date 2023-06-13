@@ -7,7 +7,7 @@ from langchain import PromptTemplate, LLMChain
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 from langchain.chat_models import ChatOpenAI
 
-from file_utils import FileUtils
+from src.file_utils import FileUtils
 
 load_dotenv()
 
