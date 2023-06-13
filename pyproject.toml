@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "unittest-gpt"
-version = "0.1.2"
+version = "0.1.3"
 description = "Auto generate unit test using PyTest and Gpt"
 authors = ["Akshay Lingamaneni"]
 license = "MIT License"

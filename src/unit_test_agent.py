@@ -31,7 +31,7 @@ class UnitTestAgent:
             formatted_code = autopep8.fix_code(test_case_code)
 
             # Get the path to the parent directory of the "src" director
-            project_directory = os.path.dirname(os.getcwd())
+            project_directory = os.path.abspath(os.getcwd())
 
             # Create the "tests" directory if it doesn't exist
             tests_directory = os.path.join(project_directory, 'tests')
@@ -94,7 +94,7 @@ class UnitTestAgent:
         return code
 
     def create_tests_init_file(self):
-        project_directory = os.path.dirname(os.getcwd())
+        project_directory = os.path.abspath(os.getcwd())
 
         # Create the "tests" directory if it doesn't exist
         tests_directory = os.path.join(project_directory, 'tests')
