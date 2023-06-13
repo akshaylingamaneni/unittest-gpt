@@ -1,0 +1,5 @@
+autopep8
+python-dotenv
+langchain
+openai
+pytest
